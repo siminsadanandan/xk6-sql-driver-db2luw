@@ -1,11 +1,11 @@
 // Package ramsql contains db2luw driver registration for xk6-sql.
-package ramsql
+package db2luw
 
 import (
 	"github.com/grafana/xk6-sql/sql"
 
 	// Blank import required for initialization of driver.
-	_ "github.com/siminsadanandan/db2luw/driver"
+        _ "github.com/ibmdb/go_ibm_db"
 )
 
 func init() {
