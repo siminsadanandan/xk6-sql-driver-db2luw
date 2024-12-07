@@ -11,5 +11,5 @@ import (
 var script string
 
 func TestIntegration(t *testing.T) { //nolint:paralleltest
-	sqltest.RunScript(t, "db2luw", "test_db", script)
+	sqltest.RunScript(t, "db2luw", "HOSTNAME=localhost;PORT=50000;DATABASE= pebnch;UID=db2inst1;PWD= pass1;", script)
 }

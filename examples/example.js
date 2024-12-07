@@ -1,7 +1,7 @@
 import sql from "k6/x/sql";
 import driver from "k6/x/sql/driver/db2luw";
 
-const db = sql.open(driver, "test_db");
+const db = sql.open(driver, "HOSTNAME=localhost;PORT=50000;DATABASE= pebnch;UID=db2inst1;PWD= pass1;");
 
 export function setup() {
   db.exec(`
