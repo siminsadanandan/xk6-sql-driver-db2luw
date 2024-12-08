@@ -1,10 +1,12 @@
 module github.com/siminsadanandan/xk6-sql-driver-db2luw
 
-go 1.22
+go 1.22.5
+
+toolchain go1.22.10
 
 require (
 	github.com/grafana/xk6-sql v1.0.0
-	github.com/siminsadanandan/db2luw v0.1.4
+	github.com/ibmdb/go_ibm_db v0.5.0
 )
 
 require (
@@ -20,7 +22,7 @@ require (
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/grafana/sobek v0.0.0-20240927094302-19dd311f018f // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.22.0 // indirect
-	github.com/jackc/puddle/v2 v2.2.2 // indirect
+	github.com/ibmruntimes/go-recordio/v2 v2.0.0-20240416213906-ae0ad556db70 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
@@ -42,7 +44,6 @@ require (
 	go.opentelemetry.io/otel/sdk v1.29.0 // indirect
 	go.opentelemetry.io/otel/trace v1.29.0 // indirect
 	go.opentelemetry.io/proto/otlp v1.3.1 // indirect
-	golang.org/x/exp v0.0.0-20230713183714-613f0c0eb8a1 // indirect
 	golang.org/x/net v0.28.0 // indirect
 	golang.org/x/sys v0.24.0 // indirect
 	golang.org/x/text v0.17.0 // indirect
